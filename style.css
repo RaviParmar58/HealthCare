@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+}
+
+/*  ----------  common  ----------  */
+
+.btn {
+    padding: 10px 20px;
+    background-color: #f50284;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: rgb(255, 52, 160);
+
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.p-50px{
+    padding: 50px;
+}
+
+.px-50px {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.py-50px {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.w-50per{
+    width: 50%;
+    padding: 0 5px;
+}
+
+/*  ----------  Navbar  ----------  */
+
+header {
+    height: 80px;
+    padding: 0 50px;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    height: 60px;
+}
+
+.navbar ul li {
+    padding: 10px 15px;
+}
+
+.navbar ul li a {
+    color: #000;
+    font-size: 14px;
+    display: inline-block;
+    position: relative;
+}
+
+.navbar ul li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f50284;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar .btn{
+    margin-left: 15px;
+}
+
+/*  ----------  main-banner  ----------  */
+
+.main-banner .content .image {
+    width: 100px;
+}
+
+.main-banner .content p {
+    margin: 20px 0;
+}
+
+.image img {
+    height: 280px;
+}
+
+.content h1 {
+    font-size: 48px;
+}
+
+.content h1 span {
+    color: #f50284;
+}
+
+.content p {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.heading h2 {
+    font-size: 28px;
+    display: inline-block;
+    position: relative
+}
+
+.heading h2:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f50284;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-in-out;
+}
+
+.heading h2:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.product-box {
+    width: 25%;
+    padding: 10px;
+}
+
+.product {
+    width: 100%;
+
+}
+
+.product-image {
+    height: 280px;
+    border: 1px solid #eee;
+
+}
+
+.product-image img {
+    height: 220px;
+}
+
+.product-info {
+    margin: 10px 0px;
+    box-shadow: 0px 1px 1px 1px rgb(0 0 0 / 20%);
+    height: 30px;
+}
+
+.cartificate-heading h2 {
+    font-size: 28px;
+    display: inline-block;
+    position: relative
+}
+
+.cartificate-heading h2:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f50284;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-in-out;
+}
+
+.cartificate-heading h2:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.cartificate-box {
+    width: 25%;
+    padding: 10px;
+}
+
+.cartificate {
+    width: 100%;
+}
+
+.cartificate-image {
+    height: 100px;
+}
+
+.cartificate-image img {
+    height: 150px;
+    padding: 20px 40px;
+}
+
+.info-box {
+    width: 50%;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 20%);
+}
+
+.info {
+    padding: 10px;
+}
+
+.info h2 {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.info p {
+    padding: 10px;
+    font-size: 12px;
+}
+
+.info-image img {
+    height: 220px;
+    border-radius: 20px;
+    width: 180px;
+    padding: 10px;
+}
